@@ -17,9 +17,10 @@ import com.google.gson.Gson;
  *
  */
 public class Application {
-	private static final String REVLO_API_KEY = "bT3bY_6AvR3mUlmqTm-ERn1Z235yUeEQJZwiLcEkWWU";
+	private static String REVLO_API_KEY;
 
 	public static void main(String[] args) {
+		REVLO_API_KEY = args[0];
 		try {
 			RewardsWrapper rewards = getRewards();
 			Integer songRewardID = getRewardIDByName(rewards, "Song Request");
