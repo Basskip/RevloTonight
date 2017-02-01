@@ -3,7 +3,7 @@ package revlotonight;
 import java.util.ArrayList;
 
 public class Reward {
-	private String reward_id;
+	private Integer reward_id;
 	private String created_at;
 	private String title;
 	private String bot_command;
@@ -14,10 +14,10 @@ public class Reward {
 	private String description;
 	private String img_url;
 	
-	public String getReward_id() {
+	public Integer getReward_id() {
 		return reward_id;
 	}
-	public void setReward_id(String reward_id) {
+	public void setReward_id(Integer reward_id) {
 		this.reward_id = reward_id;
 	}
 	public String getTitle() {
